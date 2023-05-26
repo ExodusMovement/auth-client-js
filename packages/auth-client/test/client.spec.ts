@@ -1,11 +1,18 @@
 /* eslint-disable no-console */
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 import { expect, describe, it, beforeEach, afterEach, beforeAll } from "vitest";
+import { randomStringForEntropy } from "@stablelib/random";
 import { Wallet } from "@ethersproject/wallet";
 import { AuthClient, generateNonce, IAuthClient, AuthEngineTypes, AuthClientTypes } from "../src";
 import { disconnectSocket } from "./helpers/ws";
 import { RELAYER_EVENTS } from "@exodus/walletconnect-core";
 import { RelayerTypes } from "@exodus/walletconnect-types";
+
+// Reference implementation:
+// https://github.com/spruceid/siwe/blob/38140330e54af91b1fab8ba1a8169e1fcbd8d271/packages/siwe/lib/utils.ts#L44
+export function generateNonce(): string {
+  return randomStringForEntropy(96);
+}
 
 const metadataRequester = {
   name: "client (requester)",
