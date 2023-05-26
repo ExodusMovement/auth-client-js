@@ -12,7 +12,7 @@ const plugins = [
   commonjs(),
   nodePolyfills(),
   esbuild({
-    minify: true,
+    minify: false,
     tsconfig: "./tsconfig.json",
     loaders: {
       ".json": "json",
@@ -25,17 +25,6 @@ export default function createConfig(packageName, packageDependencies) {
     {
       input,
       plugins,
-      output: {
-        file: "./dist/index.umd.js",
-        format: "umd",
-        exports: "named",
-        name: packageName,
-        sourcemap: true,
-      },
-    },
-    {
-      input,
-      plugins,
       external: packageDependencies,
       output: [
         {
@@ -43,15 +32,8 @@ export default function createConfig(packageName, packageDependencies) {
           format: "cjs",
           exports: "named",
           name: packageName,
-          sourcemap: true,
-        },
-        {
-          file: "./dist/index.es.js",
-          format: "es",
-          exports: "named",
-          name: packageName,
-          sourcemap: true,
-        },
+          sourcemap: false,
+        }
       ],
     },
   ];
