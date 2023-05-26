@@ -34,8 +34,8 @@
     "node": ">=16"
   },
   "dependencies": {
-    "@ethersproject/hash": "^5.7.0",
-    "@ethersproject/transactions": "^5.7.0",
+    "@exodus/ethersproject-hash": "^5.4.2-exodus.0",
+    "@exodus/ethersproject-transactions": "^5.4.2-exodus.0",
     "sha.js": "^2.4.11",
     "@exodus/walletconnect-core": "^2.7.6-exodus.0",
     "@exodus/walletconnect-events": "^1.0.1-exodus.2",

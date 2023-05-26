@@ -1,5 +1,5 @@
-import { hashMessage } from "@ethersproject/hash";
-import { recoverAddress } from "@ethersproject/transactions";
+import { hashMessage } from "@exodus/ethersproject-hash";
+import { recoverAddress } from "@exodus/ethersproject-transactions";
 import fetch from "isomorphic-unfetch";
 
 import { AuthEngineTypes } from "../types";
