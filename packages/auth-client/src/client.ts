@@ -1,10 +1,10 @@
-import { Core, Store } from "@walletconnect/core";
+import { Core, Store } from "@exodus/walletconnect-core";
 import {
   generateChildLogger,
   getDefaultLoggerOptions,
   getLoggerContext,
   pino,
-} from "@walletconnect/logger";
+} from "@exodus/walletconnect-logger";
 import { EventEmitter } from "events";
 
 import { AuthClientTypes, IAuthClient } from "./types";

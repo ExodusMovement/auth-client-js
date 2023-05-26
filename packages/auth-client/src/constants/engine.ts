@@ -1,4 +1,4 @@
-import { ONE_DAY, FIVE_MINUTES, SEVEN_DAYS } from "@walletconnect/time";
+import { ONE_DAY, FIVE_MINUTES, SEVEN_DAYS } from "@exodus/walletconnect-time";
 import { JsonRpcTypes, RpcOpts } from "../types";
 
 export const ENGINE_RPC_OPTS: Record<JsonRpcTypes.WcMethod, RpcOpts> = {

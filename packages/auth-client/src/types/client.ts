@@ -1,10 +1,10 @@
-import { ICore, IStore, CoreTypes, Verify } from "@walletconnect/types";
+import { ICore, IStore, CoreTypes, Verify } from "@exodus/walletconnect-types";
 import EventEmitter from "events";
 import { AuthEngineTypes } from "./engine";
 
 import { IAuthEngine } from "../types";
-import { JsonRpcError, JsonRpcResult } from "@walletconnect/jsonrpc-utils";
-import { Logger } from "@walletconnect/logger";
+import { JsonRpcError, JsonRpcResult } from "@exodus/walletconnect-jsonrpc-utils";
+import { Logger } from "@exodus/walletconnect-logger";
 
 export declare namespace AuthClientTypes {
   type Event = "auth_request" | "auth_response";

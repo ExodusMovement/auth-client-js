@@ -1,4 +1,4 @@
-import { RELAYER_EVENTS } from "@walletconnect/core";
+import { RELAYER_EVENTS } from "@exodus/walletconnect-core";
 import {
   formatJsonRpcError,
   formatJsonRpcRequest,
@@ -7,9 +7,9 @@ import {
   isJsonRpcRequest,
   isJsonRpcResponse,
   isJsonRpcResult,
-} from "@walletconnect/jsonrpc-utils";
-import { RelayerTypes, Verify } from "@walletconnect/types";
-import { getInternalError, hashKey, TYPE_1 } from "@walletconnect/utils";
+} from "@exodus/walletconnect-jsonrpc-utils";
+import { RelayerTypes, Verify } from "@exodus/walletconnect-types";
+import { getInternalError, hashKey, TYPE_1 } from "@exodus/walletconnect-utils";
 import { AUTH_CLIENT_PUBLIC_KEY_NAME, ENGINE_RPC_OPTS } from "../constants";
 import { AuthClientTypes, AuthEngineTypes, IAuthEngine, JsonRpcTypes } from "../types";
 import { getDidAddress, getDidChainId, getNamespacedDidChainId } from "../utils/address";

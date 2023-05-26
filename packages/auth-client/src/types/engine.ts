@@ -1,4 +1,4 @@
-import { CryptoTypes, RelayerTypes } from "@walletconnect/types";
+import { CryptoTypes, RelayerTypes } from "@exodus/walletconnect-types";
 
 import {
   ErrorResponse as CommonErrorResponse,
@@ -6,7 +6,7 @@ import {
   JsonRpcRequest,
   JsonRpcResponse,
   JsonRpcResult,
-} from "@walletconnect/jsonrpc-utils";
+} from "@exodus/walletconnect-jsonrpc-utils";
 import { AuthClientTypes, IAuthClient } from "./client";
 import { JsonRpcTypes } from "./jsonrpc";
 

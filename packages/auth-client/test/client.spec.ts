@@ -4,8 +4,8 @@ import { expect, describe, it, beforeEach, afterEach, beforeAll } from "vitest";
 import { Wallet } from "@ethersproject/wallet";
 import { AuthClient, generateNonce, IAuthClient, AuthEngineTypes, AuthClientTypes } from "../src";
 import { disconnectSocket } from "./helpers/ws";
-import { RELAYER_EVENTS } from "@walletconnect/core";
-import { RelayerTypes } from "@walletconnect/types";
+import { RELAYER_EVENTS } from "@exodus/walletconnect-core";
+import { RelayerTypes } from "@exodus/walletconnect-types";
 
 const metadataRequester = {
   name: "client (requester)",

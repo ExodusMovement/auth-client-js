@@ -1,5 +1,5 @@
-import { IStore } from "@walletconnect/types";
-import { getInternalError, isValidRequestExpiry, isValidUrl } from "@walletconnect/utils";
+import { IStore } from "@exodus/walletconnect-types";
+import { getInternalError, isValidRequestExpiry, isValidUrl } from "@exodus/walletconnect-utils";
 import { AUTH_REQUEST_EXPIRY_BOUNDARIES } from "../constants";
 import { AuthEngineTypes } from "../types";
 import { getPendingRequest } from "./store";
