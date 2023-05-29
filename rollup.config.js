@@ -28,12 +28,12 @@ export default function createConfig(packageName, packageDependencies) {
       external: packageDependencies,
       output: [
         {
-          file: "./dist/index.cjs.js",
-          format: "cjs",
+          file: "./dist/index.es.js",
+          format: "es",
           exports: "named",
           name: packageName,
           sourcemap: false,
-        }
+        },
       ],
     },
   ];
