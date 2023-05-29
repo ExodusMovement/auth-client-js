@@ -47,7 +47,8 @@
     "@exodus/walletconnect-time": "^1.0.2-exodus.1",
     "@exodus/walletconnect-utils": "^2.7.6-exodus.0",
     "events": "^3.3.0",
-    "isomorphic-unfetch": "^3.1.0"
+    "isomorphic-unfetch": "^3.1.0",
+    "uint8arrays": "^3.1.0"
   },
   "devDependencies": {
     "@ethersproject/wallet": "^5.7.0",
