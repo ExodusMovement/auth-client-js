@@ -1,7 +1,7 @@
 {
   "name": "@exodus/walletconnect-auth-client",
   "description": "Auth Client for WalletConnect Protocol",
-  "version": "2.1.0-exodus.2",
+  "version": "2.1.0-exodus.3",
   "author": "WalletConnect, Inc. <walletconnect.com>",
   "homepage": "https://github.com/WalletConnect/auth-client-js/",
   "license": "Apache-2.0",
@@ -47,8 +47,7 @@
     "@exodus/walletconnect-time": "^1.0.2-exodus.1",
     "@exodus/walletconnect-utils": "^2.7.6-exodus.0",
     "events": "^3.3.0",
-    "isomorphic-unfetch": "^3.1.0",
-    "uint8arrays": "^3.1.0"
+    "isomorphic-unfetch": "^3.1.0"
   },
   "devDependencies": {
     "@ethersproject/wallet": "^5.7.0",
