@@ -426,7 +426,7 @@ export class AuthEngine extends IAuthEngine {
     }
   };
 
-  private getVerifyContext = async (hash: string, metadata: AuthClientTypes.Metadata) => {
+  private getVerifyContext = async (_hash: string, metadata: AuthClientTypes.Metadata) => {
     const context: Verify.Context = {
       verified: {
         verifyUrl: metadata.verifyUrl || "",
@@ -435,20 +435,6 @@ export class AuthEngine extends IAuthEngine {
       },
     };
 
-    try {
-      const origin = await this.client.core.verify.resolve({
-        attestationId: hash,
-        verifyUrl: metadata.verifyUrl,
-      });
-      if (origin) {
-        context.verified.origin = origin;
-        context.verified.validation = origin === metadata.url ? "VALID" : "INVALID";
-      }
-    } catch (e) {
-      this.client.logger.error(e);
-    }
-
-    this.client.logger.info(`Verify context: ${JSON.stringify(context)}`);
     return context;
   };
 }
