@@ -49,7 +49,7 @@ describe("Validation", () => {
     it("Validates happy case", async () => {
       const id = 1;
       const client = await AuthClient.init({
-        logger: "error",
+        logger: console,
         relayUrl: process.env.TEST_RELAY_URL || "wss://staging.relay.walletconnect.com",
         projectId: process.env.TEST_PROJECT_ID!,
         storageOptions: {
@@ -72,7 +72,7 @@ describe("Validation", () => {
 
     it("Validates bad case", async () => {
       const client = await AuthClient.init({
-        logger: "error",
+        logger: console,
         relayUrl: process.env.TEST_RELAY_URL || "wss://staging.relay.walletconnect.com",
         projectId: process.env.TEST_PROJECT_ID!,
         storageOptions: {

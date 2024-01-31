@@ -74,7 +74,7 @@ describe("AuthClient", () => {
   beforeEach(async () => {
     client = await AuthClient.init({
       name: "testClient",
-      logger: "error",
+      logger: console,
       relayUrl,
       projectId: process.env.TEST_PROJECT_ID!,
       storageOptions: {
@@ -85,7 +85,7 @@ describe("AuthClient", () => {
 
     peer = await AuthClient.init({
       name: "testPeer",
-      logger: "error",
+      logger: console,
       relayUrl,
       projectId: process.env.TEST_PROJECT_ID!,
       storageOptions: {
@@ -438,7 +438,7 @@ describe("AuthClient", () => {
   it("receives metadata", async () => {
     let receivedMetadataName = "";
     client = await AuthClient.init({
-      logger: "error",
+      logger: console,
       relayUrl,
       projectId: process.env.TEST_PROJECT_ID!,
       storageOptions: {

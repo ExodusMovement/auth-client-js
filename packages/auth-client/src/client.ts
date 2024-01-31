@@ -1,10 +1,5 @@
 import { Core, Store } from "@exodus/walletconnect-core";
-import {
-  generateChildLogger,
-  getDefaultLoggerOptions,
-  getLoggerContext,
-  pino,
-} from "@exodus/walletconnect-logger";
+import { generateChildLogger, getLoggerContext } from "@exodus/walletconnect-logger";
 import { EventEmitter } from "events";
 
 import { AuthClientTypes, IAuthClient } from "./types";
@@ -43,13 +38,7 @@ export class AuthClient extends IAuthClient {
     super(opts);
 
     const logger =
-      typeof opts.logger !== "undefined" && typeof opts.logger !== "string"
-        ? opts.logger
-        : pino(
-            getDefaultLoggerOptions({
-              level: opts.logger || "error",
-            }),
-          );
+      typeof opts.logger !== "undefined" && typeof opts.logger !== "string" ? opts.logger : console;
 
     this.name = opts?.name || AUTH_CLIENT_DEFAULT_NAME;
     this.metadata = opts.metadata;
