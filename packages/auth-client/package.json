@@ -39,13 +39,13 @@
     "@exodus/ethersproject-hash": "^5.4.2-exodus.0",
     "@exodus/ethersproject-transactions": "^5.4.2-exodus.0",
     "sha.js": "^2.4.11",
-    "@exodus/walletconnect-core": "^2.7.6-exodus.0",
+    "@exodus/walletconnect-core": "^2.11.0-exodus.4",
     "@exodus/walletconnect-events": "^1.0.1-exodus.2",
     "@exodus/walletconnect-heartbeat": "^1.2.1-exodus.0",
     "@exodus/walletconnect-jsonrpc-utils": "^1.0.8-exodus.0",
     "@exodus/walletconnect-logger": "^2.0.1-exodus.0",
     "@exodus/walletconnect-time": "^1.0.2-exodus.1",
-    "@exodus/walletconnect-utils": "^2.7.6-exodus.0",
+    "@exodus/walletconnect-utils": "^2.11.0-exodus.3",
     "events": "^3.3.0"
   },
   "devDependencies": {
